@@ -2,13 +2,33 @@
     grid-row: content-s/content-e;
     grid-column: s/e;
 
-    &__form {
+    // &__page-title {
 
+    // }
+
+    &__form {
+        display: grid;
+        grid-template-rows: [email-s] 64px [email-e password-s] 50px [password-e] minmax(20px, 90px) [line-s] 50px [line-e login-s] 50px [login-e] ;
+        grid-template-columns: 1fr;
     }
 }
 
 .sign-in-form {
+    &__email {
+        grid-row: email-s/email-e;
+    }
+
+    &__password {
+        grid-row: password-e/password-e;
+    }
+
     &__line {
+        grid-row: line-s/line-e;
         border-top: 1px solid #000;
+    }
+
+    &__login {
+        grid-row: login-s/login-e;
+
     }
 }
