@@ -8,8 +8,16 @@
 
     &__form {
         display: grid;
-        grid-template-rows: [email-s] 64px [email-e password-s] 50px [password-e] minmax(20px, 90px) [line-s] 50px [line-e login-s] 50px [login-e] ;
-        // grid-template-columns: 1fr;
+        grid-template-rows: 
+        [name-s] 80px
+        [name-e email-s] 80px
+        [email-e space-s] 25px 
+        [space-e password-s] 20px 
+        [password-e confirm-s] 50px 
+        [confirm-e] 60px
+        [login-s] 38px 
+        [login-e back-s] 30px
+        [back-e] 30px;
     }
 }
 
@@ -17,21 +25,40 @@
     // & > * {
     //     grid-column: 1/-1;
     // }
+    &__name {
+        grid-row: name-s/name-e;
+        text-decoration: none;
+    }
+
     &__email {
         grid-row: email-s/email-e;
         text-decoration: none;
     }
 
     &__password {
+        margin-top: 35px;
         grid-row: password-e/password-e;
         text-decoration: none;
     }
 
 
+    &__confirm {
+        grid-row: confirm-e/confirm-e;
+        text-decoration: none;
+    }
+
+
     &__login {
+        margin-top: 24px;
         grid-row: login-s/login-e;
 
     }
+    
+    &__back {
+        margin-top: 40px;
+        grid-row: back-s/back-e;
+    }
+
     &__details {
         grid-row: 1/-1;
         justify-self: end;

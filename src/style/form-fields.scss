@@ -34,5 +34,10 @@
         &:focus {
             outline: none;
         }
+
+        &__blue-button {
+            background: #3498db;
+            width: 137px;
+        }
     }
 }
