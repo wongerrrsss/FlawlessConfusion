@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
+
 
 class Navbar extends Component {
     render() {
         return (
             <div className="navbar">
+                    <a href={'/clothing'}>clothing.</a>
+                    <a href={'/accessories'}>accessories.</a>
+                    <a href={'/sale'}>sale.</a>
                 <div className="page-wrapper">
-                    <NavLink to={'/clothing'}>clothing.</NavLink>
-
-                    <NavLink to={'/accessories'}>accessories.</NavLink>
-                    
-                    <NavLink to={'/sale'}>sale.</NavLink>
-
-                    <NavLink to={'/signin'}>signin.</NavLink>
+                    <a href={'/signin'}>sign-in.</a>
                 </div>
             </div>
         )
