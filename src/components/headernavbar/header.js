@@ -7,7 +7,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <NavLink to={"/"}><h1>flawless confusion.</h1></NavLink>
+                <NavLink to={"/"}><h1 className="header__text">flawless confusion.</h1></NavLink>
                 <div className="header__links">
                     {
                         this.props.headerLinks.map((link, index) => {
