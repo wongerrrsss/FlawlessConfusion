@@ -1,20 +1,33 @@
 import React, { Component } from "react";
-// import { NavLink } from 'react-router-dom'
+
+import { connect } from 'react-redux';
 
 
 class Navbar extends Component {
     render() {
         return (
-            <div className="navbar">
-                    <a href={'/clothing'}>clothing.</a>
-                    <a href={'/accessories'}>accessories.</a>
-                    <a href={'/sale'}>sale.</a>
-                <div className="page-wrapper">
-                    <a href={'/signin'}>sign-in.</a>
-                </div>
+            <div className='navbar'>
+                {
+                    this.props.navbarLinks.map((link, index) => {
+                        return (
+                            <a className='navbar__link' key={index} onClick={() => console.log('trying to switch tab')}>
+                                {link.title}
+                            </a>
+                        )
+                    })
+                }
             </div>
         )
     }
 }
+
+function mapStateToProps(state) {
+    const { navbarLinks } = state.headerNavbar;
+    return {
+        navbarLinks
+    }
+}
+
+Navbar = connect(mapStateToProps)(Navbar);
 
 export default Navbar; 
