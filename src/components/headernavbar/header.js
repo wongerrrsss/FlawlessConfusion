@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     render() {
         return (
             <div className="header">
-                <img src="../../static/images/flawlessconfusionlogo.png" />
+                <NavLink to={"/"}><h1>flawless confusion.</h1></NavLink>
             </div>
         )
     }

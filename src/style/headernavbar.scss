@@ -1,10 +1,9 @@
 .header {
     grid-row: header-s/header-e;
     grid-column: 1/-1;
-    display: grid;
+    display: flex;
     justify-content: center;
-
-
+    align-items: center;
 }
 
 .navbar {
@@ -16,4 +15,9 @@
     background-color: #8e44ad;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
     font-size: 20px;
+
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
