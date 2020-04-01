@@ -19,6 +19,7 @@ import HomePage from "./components/homepage"
 import Clothing from "./components/pages/clothing"
 import Accessories from "./components/pages/accessories"
 import Sale from "./components/pages/sale"
+import Account from "./components/account/account";
 
 function main() {
   ReactDOM.render(
@@ -32,6 +33,7 @@ function main() {
             <Route path='/clothing' exact component={Clothing} />
             <Route path='/accessories' exact component={Accessories} />
             <Route path='/sale' exact component={Sale} />
+            <Route path='/account' exact component={Account} />
           </Switch>
         </Layout>
       </Router>
