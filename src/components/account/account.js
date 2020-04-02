@@ -26,13 +26,13 @@ class Account extends Component {
             {
                 _id: 0,
                 title: 'my bag.',
-                active: false,
+                active: true,
                 component: <PurchaseHistory/>
             },
             {
                 _id: 1, 
                 title: 'my account',
-                active: true, 
+                active: false, 
                 component: <AccountInformation/>
             }
         ]
