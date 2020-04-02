@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import * as actions from "../../actions";
 import { connect } from 'react-redux';
 
+import Images from "../../../static/images/ashleysmall.jpg"
+
+
 class Purchases extends Component {
 
     componentDidMount() {
@@ -16,7 +19,11 @@ class Purchases extends Component {
             <div className={`${className} purchases`}>
                 {
                     this.props.purchases.map(purchase => {
-                        return <div>{purchase.title}</div>
+                        return (
+                            <div key={purchase._id} className='purchases__purchase purchase'>
+                                <img className='purchase__img' src={Images} />
+                            </div>
+                        )
                     })
                 }
             </div>

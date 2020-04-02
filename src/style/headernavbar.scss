@@ -7,27 +7,17 @@
     grid-template-rows: 1fr;
     grid-template-columns: [h1-s] 1fr [h1-e links-s] 1fr [links-e];
 
-    &__h1 {
-        transform: translateX(25px);
-        grid-column: h1-s/h1-e;
-        grid-row: 1/-1;
-
-        &__text {
-           display: flex;
-           justify-items: center;
-           align-items: center; 
-        }
-        
-    }
-
     &__links {
-        grid-column: links-s/links-e;
-        grid-row: 1/-1;
+        justify-content: space-between;
+        grid-column-gap: 10px;
+        // grid-column: links-s/links-e;
+        // grid-row: 1/-1;
 
-        display: grid;
-        grid-template-rows: [s] 1fr [e];
-        grid-column-gap: 15px;
-        margin-right: 20px;
+        // display: grid;
+        // grid-template-rows: [s] 1fr [e];
+        
+        
+        // margin-right: 20px;
         font-size: 12px;
         
         & > * {
@@ -39,16 +29,24 @@
 .navbar {
     grid-row: navbar-s/navbar-e;
     grid-column: 1/-1;
-    background-color: #8e44ad;
+    background-color: #000;
+    color: #ccc;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
     font-size: 20px;
-
-    display: grid;
-    grid-template-rows: [s] 1fr [e];
+    
+    // display: grid;
+    // grid-template-rows: [s] 1fr [e];
     align-items: center;
 
     justify-content: center;
     grid-column-gap: 20px;
+
+    &__h1 {
+        transform: translateX(25px);
+        grid-column: h1-s/h1-e;
+        grid-row: 1/-1;
+        justify-content: space-between;
+    }
     
     &__link {
         margin-left: 30px;
