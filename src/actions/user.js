@@ -19,7 +19,7 @@ export function fetchUserPurchases() {
                 title: 'dreaming of winter wonderland sweater',
                 amount: 18.67,
                 orderNumber: 'FC73283728',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(), 
                 creditCard: '-5552',
                 user: {
                     name: 'Karona Vyress',
@@ -31,7 +31,7 @@ export function fetchUserPurchases() {
                 title: 'dreaming of winter wonderland sweater',
                 amount: 22.58,
                 orderNumber: 'FC73783728',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-5552',
                 user: {
                     name: 'Thes Sucks',
@@ -43,7 +43,7 @@ export function fetchUserPurchases() {
                 title: 'dreaming of winter wonderland sweater',
                 amount: 158.57,
                 orderNumber: 'FC73212728',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-5552',
                 user: {
                     name: 'Jen Feathers',
@@ -55,7 +55,7 @@ export function fetchUserPurchases() {
                 title: 'dreaming of winter wonderland sweater',
                 amount: 23.67,
                 orderNumber: 'FC73283728',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-5552',
                 user: {
                     name: 'Ashley Adams',
@@ -67,7 +67,7 @@ export function fetchUserPurchases() {
                 title: 'dreaming of winter wonderland sweater',
                 amount: 22.67,
                 orderNumber: 'FC71083728',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-5552',
                 user: {
                     name: 'Candalabra Nightgown',
@@ -79,7 +79,7 @@ export function fetchUserPurchases() {
                 title: 'dreaming of winter wonderland sweater',
                 amount: 20.50,
                 orderNumber: 'FC73263628',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-5552',
                 user: {
                     name: 'Tawonga Chilongo',
@@ -91,7 +91,7 @@ export function fetchUserPurchases() {
                 title: 'dreaming of winter wonderland sweater',
                 amount: 30.54,
                 orderNumber: 'FC73556528',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-5552',
                 user: {
                     name: 'Joe Friend',
@@ -103,7 +103,7 @@ export function fetchUserPurchases() {
                 title: 'dreaming of winter wonderland sweater',
                 amount: 31.87,
                 orderNumber: 'FC73546528',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-5552',
                 user: {
                     name: 'Trafficka Jaminez',
