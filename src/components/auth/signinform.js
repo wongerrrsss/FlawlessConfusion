@@ -15,16 +15,16 @@ class SignInForm extends Component {
                 title: 'sign up for cool stuff!',
                 onClick: () => history.push("/signup")
             },
-            {
-                _id: 1,
-                title: 'did you forget your email?',
-                onClick: () => console.log("forgot email")
-            },
-            {
-                _id: 2,
-                title: 'did you forget your password?',
-                onClick: () => console.log("forgot password")
-            }
+            // {
+            //     _id: 1,
+            //     title: 'did you forget your email?',
+            //     onClick: () => console.log("forgot email")
+            // },
+            // {
+            //     _id: 2,
+            //     title: 'did you forget your password?',
+            //     onClick: () => console.log("forgot password")
+            // }
         ]
         return (
             <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>

@@ -1,10 +1,6 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: inherit;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Didact Gothic', sans-serif; 
 }
 
 a {
@@ -16,30 +12,22 @@ html {
     font-size: 62.5%;
 }
 
-.header {
-
-   h1 {
-    font-size: 3rem;
-} 
-
-}
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 
 
-
-@import 'layout.scss';
 @import 'headernavbar.scss';
+@import 'layout.scss';
+
 @import 'auth/signin.scss';
 @import 'auth/signup.scss';
 
 @import 'page-title.scss';
 @import 'form-fields.scss';
 @import 'details.scss';
-@import 'homepage.scss';
 
 @import 'account/account.scss';
 @import 'account/purchase-history.scss';

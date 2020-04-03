@@ -15,10 +15,6 @@ import history from "./history";
 import Layout from "./components/layout";
 import SignIn from "./components/auth/signin"
 import SignUp from "./components/auth/signup"
-import HomePage from "./components/homepage"
-import Clothing from "./components/pages/clothing"
-import Accessories from "./components/pages/accessories"
-import Sale from "./components/pages/sale"
 import Account from "./components/account/account";
 
 function main() {
@@ -27,12 +23,9 @@ function main() {
       <Router history={history}>
         <Layout>
           <Switch>
-            <Route path='/' exact component={HomePage} />
+            <Route path='/' exact component={SignIn} />
             <Route path='/signin' exact component={SignIn} />
             <Route path='/signup' exact component={SignUp} />
-            <Route path='/clothing' exact component={Clothing} />
-            <Route path='/accessories' exact component={Accessories} />
-            <Route path='/sale' exact component={Sale} />
             <Route path='/account' exact component={Account} />
           </Switch>
         </Layout>

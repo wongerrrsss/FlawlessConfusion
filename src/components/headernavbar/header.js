@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import history from '../../history';
@@ -8,6 +7,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header__links">
+                <a href="/"><h1>flawless confusion.</h1></a>
                 {
                     this.props.headerLinks.map((link, index) => {
                         return (
