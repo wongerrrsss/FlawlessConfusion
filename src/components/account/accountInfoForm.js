@@ -50,12 +50,12 @@ class AccountInfoForm extends Component {
                     name='zipcode' 
                     component={FormInput}/>
 
-                <Field className='account-info-form__change-password' 
-                    onClick={() => console.log('show button')}
-                    type='button' 
-                    labelTitle='Password'
-                    title='password.'
-                    name='change-password' 
+                <Field className='account-info-form__update-address' 
+                    onClick={() => console.log('trying to update address')}
+                    type='submit' 
+                    labelTitle=''
+                    title='update.'
+                    name='update-address' 
                     component={LongGrayButton}/>
             </form>
         )

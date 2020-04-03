@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import * as actions from "../../actions";
 import AccountInformation from './accountInformation';
 import PurchaseHistory from './purchaseHistory';
+// import HomePage from "../pages/homepage";
+
+import Navbar from "../../components/headernavbar/navbar";
+import Header from '../headernavbar/header';
 
 class Account extends Component {
 
@@ -12,12 +16,17 @@ class Account extends Component {
         const headerLinks = [
             {
                 _id: 0, 
-                title: 'shop.',
-                path: '/shop'
+                title: '|  home.  |',
+                path: '/'
             },
             {
                 _id: 1, 
-                title: 'logout.',
+                title: '|  shop.  |',
+                path: '/clothing'
+            },
+            {
+                _id: 2, 
+                title: '|  logout.  |',
                 path: '/'
             }
         ]
@@ -56,6 +65,8 @@ class Account extends Component {
     render() {
         return (
             <div className='account'>
+                <Header />
+                <Navbar />
                 { this.renderContent() }
             </div>
         )

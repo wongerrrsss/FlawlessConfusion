@@ -1,29 +1,4 @@
-.header {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-
-    &__links {
-        display: grid;
-        grid-gap: 47px;
-        color: #333;
-        font-size: 16px;
-        justify-self: center;
-    
-        // & > * {
-        //     grid-row: s/e;
-        // }
-
-        // margin-right: 47px;
-    }
-
-}
-
-.green-text {
-    color: #00CB79 !important;
-}
-
-.navbar {
+.account-navbar {
     grid-row: navbar-e/navbar-s;
     grid-column: 1/-1;
 
@@ -33,6 +8,7 @@
 
     justify-content: center;
     grid-column-gap: 40px;
+    text-decoration-line: underline;
 
     color: #000;
     font-size: 18px;

@@ -1,6 +1,16 @@
 * {
     box-sizing: inherit;
     font-family: 'Didact Gothic', sans-serif; 
+
+    .header {
+        
+        &__links {
+            color: #333;
+            font-size: 16px;
+            justify-self: center;
+        }
+    
+    }
 }
 
 a {
@@ -20,7 +30,6 @@ h1 {
 
 
 @import 'headernavbar.scss';
-@import 'layout.scss';
 
 @import 'auth/signin.scss';
 @import 'auth/signup.scss';
@@ -32,3 +41,5 @@ h1 {
 @import 'account/account.scss';
 @import 'account/purchase-history.scss';
 @import 'account/account-information.scss';
+
+@import 'pages/homepage.scss';

@@ -12,23 +12,23 @@ import "./style/main.scss";
 
 import history from "./history";
 
-import Layout from "./components/layout";
+import HomePage from "./components/pages/homepage";
 import SignIn from "./components/auth/signin"
 import SignUp from "./components/auth/signup"
 import Account from "./components/account/account";
+import Clothing from "./components/pages/clothing"
 
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Router history={history}>
-        <Layout>
           <Switch>
-            <Route path='/' exact component={SignIn} />
+            <Route path='/' exact component={HomePage} />
             <Route path='/signin' exact component={SignIn} />
             <Route path='/signup' exact component={SignUp} />
             <Route path='/account' exact component={Account} />
+            <Route path='/clothing' exact component={Clothing} />
           </Switch>
-        </Layout>
       </Router>
     </Provider>,
     document.querySelector(".app-wrapper")
