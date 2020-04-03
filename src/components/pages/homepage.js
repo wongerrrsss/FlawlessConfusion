@@ -7,7 +7,7 @@ class HomePage extends Component {
         return (
             <div className='homepage'>
                 <HomepageNavbar />
-                this is where the homepage stuff will go
+                <p>Flawless Confusion is small online-boutique, where all our items are handmade and orders are crafted with care.</p>
             </div>
         )
     }

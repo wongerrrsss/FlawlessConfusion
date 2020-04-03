@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import HomePageNavbar from './homepageNavbar';
 
 class Clothing extends Component {
     render() {
         return (
             <div className='clothing'>
-                this is where the clothing section will go 
+                <HomePageNavbar/>
             </div>
         )
     }
