@@ -10,14 +10,48 @@ class AccountInfoForm extends Component {
         const { className, handleSubmit } = this.props;
         
         return (
-            <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
-                <Field className='sign-in-form__email' 
+            <form onSubmit={handleSubmit} className={`${className} account-info-form`}>
+                <Field className='account-info-form__name' 
+                    type='name' 
+                    title='' 
+                    placeholder='name.'
+                    name='name' 
+                    component={FormInput}/>
+                <Field className='account-info-form__email' 
                     type='email' 
-                    title='Email' 
-                    placeholder='whatz yo email'
+                    title='' 
+                    placeholder='email.'
                     name='email' 
                     component={FormInput}/>
-                <Field className='sign-in-form__password' 
+
+                <Field className='account-info-form__street-address' 
+                    type='address' 
+                    title='' 
+                    placeholder='address.'
+                    name='address' 
+                    component={FormInput}/>
+                <Field className='account-info-form__city' 
+                    type='city' 
+                    title='' 
+                    placeholder='city.'
+                    name='city' 
+                    component={FormInput}/>
+
+                <Field className='account-info-form__state' 
+                    type='state' 
+                    title='' 
+                    placeholder='state.'
+                    name='state' 
+                    component={FormInput}/>
+                <Field className='account-info-form__zipcode' 
+                    type='zipcode' 
+                    title='' 
+                    placeholder='zipcode.'
+                    name='zipcode' 
+                    component={FormInput}/>
+
+
+                {/* <Field className='sign-in-form__password' 
                     type='password' 
                     title='Password' 
                     placeholder='whatz yo password'
@@ -28,7 +62,7 @@ class AccountInfoForm extends Component {
                     type='submit' 
                     title='login.'
                     name='login' 
-                    component={FormButton}/>
+                    component={FormButton}/> */}
             </form>
         )
     }
