@@ -59,24 +59,28 @@
         grid-column: s/m;
         text-align: right;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
+
     }
     &__value {
         grid-column: m/e;
         text-align: left;
+        font-size: 14px;
     }
     &__track-shipment {
         grid-column: m/e;
         grid-row: m-e/me;
     }
-    &__view-reciept {
+    &__print-receipt {
         grid-column: m/e;
         grid-row: me/e;
     }
-    &__track-shipment,
-    &__view-reciept {
+    &__print-receipt,
+    &__track-shipment {
+        justify-self: center;
         text-decoration-line: underline;
         color: #000;
-        font-size: 20px;
+        font-size: 14px;
+        font-weight: 600;
     }
 }
