@@ -19,29 +19,19 @@ class Account extends Component {
                 _id: 1, 
                 title: 'logout.',
                 path: '/'
-            },
-            {
-                _id: 2, 
-                title: 'my account.',
-                path: '/account'
-            },
-            {
-                _id: 3, 
-                title: 'my bag.',
-                path: '/account'
-            },
+            }
         ]
 
         const navbarLinks = [
             {
                 _id: 0,
-                title: '',
+                title: 'my purchases.',
                 active: true,
                 component: <PurchaseHistory/>
             },
             {
                 _id: 1, 
-                title: '',
+                title: ' my account info.',
                 active: false, 
                 component: <AccountInformation/>
             }
