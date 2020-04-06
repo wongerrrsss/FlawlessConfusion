@@ -6,6 +6,8 @@ class Clothing extends Component {
         return (
             <div className='clothing'>
                 <HomePageNavbar/>
+                {/* clothing components will go here */}
+                {/* cart button */}
             </div>
         )
     }
