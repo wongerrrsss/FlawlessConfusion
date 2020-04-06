@@ -1,0 +1,20 @@
+.clothing {
+  
+    
+    .clothing-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin-top: 20px;
+        margin-left: 35px;
+
+        img:hover {
+            transition: .5s ease-in-out;
+            opacity: 80%;
+          }
+    
+    }
+}
+
+

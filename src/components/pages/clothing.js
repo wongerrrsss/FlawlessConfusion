@@ -7,23 +7,35 @@ import Img3 from "../../../static/images/ashleysmall8.jpg";
 import Img4 from "../../../static/images/ashleysmall.jpg";
 
 
+
 class Clothing extends Component {
-
-    componentDidMount() {
-        // fetch shop products
-    }
-
+    
     render() {
         return (
             <div className='clothing'>
                 <HomePageNavbar/>
-                <img src={Img1} />
-                <img src={Img2} />
-                <img src={Img3} />
-                <img src={Img4} />
-                {/* clothing components will go here */}
-                {/* shop product */}
-                {/* cart button */}
+                
+                <div className='clothing-wrapper'>
+                    <img src={Img1} />
+                    <img src={Img2} />
+                    <img src={Img3} />
+                    <img src={Img4} />
+                    {/* clothing components will go here */}
+                    {/* shop product */}
+                    {/* cart button */}
+                    <div className='item-one'>
+                        Fall is here sweater - $30.00
+                    </div>
+                    <div className='item-two'>
+                        "FLY" tshirt - $15.00
+                    </div>
+                    <div className='item-three'>
+                        Printed Cardigan (brown) - $20.00
+                    </div>
+                    <div className='item-four'>
+                        Winter Wonderland Sweater - $30.00
+                    </div>
+                </div>
             </div>
         )
     }
