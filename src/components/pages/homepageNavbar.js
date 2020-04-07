@@ -9,7 +9,7 @@ class HomePageNavbar extends Component {
                 <a href="/"><h1>flawless confusion</h1></a>
                 <NavLink to="/clothing">clothing.</NavLink>
                 <NavLink to="/signin">login.</NavLink>
-                <NavLink to="/account">add to cart.</NavLink>
+                <NavLink to="/account">my bag.</NavLink>
             </div>
         )
     }

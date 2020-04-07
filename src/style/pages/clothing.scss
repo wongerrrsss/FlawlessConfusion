@@ -8,11 +8,19 @@
         grid-auto-rows: minmax(100px, auto);
         margin-top: 20px;
         margin-left: 35px;
+        font-size: 1.5rem;
 
         img:hover {
             transition: .5s ease-in-out;
             opacity: 80%;
-          }
+        }
+
+        p:hover {
+            transition: .1s ease-in-out;
+            color: purple;
+            cursor: pointer;
+            font-weight: bold;
+        }
     
     }
 }

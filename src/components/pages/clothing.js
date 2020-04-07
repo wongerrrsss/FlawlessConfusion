@@ -10,6 +10,7 @@ import Img4 from "../../../static/images/ashleysmall.jpg";
 
 class Clothing extends Component {
     
+
     render() {
         return (
             <div className='clothing'>
@@ -25,15 +26,19 @@ class Clothing extends Component {
                     {/* cart button */}
                     <div className='item-one'>
                         Fall is here sweater - $30.00
+                        <p>add to bag.</p>
                     </div>
                     <div className='item-two'>
                         "FLY" tshirt - $15.00
+                        <p>add to bag.</p>
                     </div>
                     <div className='item-three'>
                         Printed Cardigan (brown) - $20.00
+                        <p>add to bag.</p>
                     </div>
                     <div className='item-four'>
                         Winter Wonderland Sweater - $30.00
+                        <p>add to bag.</p>
                     </div>
                 </div>
             </div>
