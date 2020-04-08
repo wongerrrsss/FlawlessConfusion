@@ -7,7 +7,7 @@ class HomePageNavbar extends Component {
         return (
             <div className='homepage-navbar'>
                 <a href="/"><h1>flawless confusion</h1></a>
-                <NavLink to="/clothing">clothing.</NavLink>
+                <NavLink to="/clothing">shop.</NavLink>
                 <NavLink to="/signin">login.</NavLink>
                 <NavLink to="/account">my bag.</NavLink>
             </div>
