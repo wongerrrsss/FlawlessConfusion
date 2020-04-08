@@ -24,22 +24,22 @@ class Clothing extends Component {
                     <img src={Img4} />
                     <div className='item-one'>
                         <p>Fall is here sweater - $30.00</p>
-                        <button>add to bag.</button>
+                        <button className='button'>add to bag.</button>
                         <Quantity className='quantity-counter' quantity={0}/>
                     </div>
                     <div className='item-two'>
                         <p>"FLY" tshirt - $15.00</p>
-                        <button type="submit">add to bag.</button>
+                        <button className='button'>add to bag.</button>
                         <Quantity className='quantity-counter' quantity={0}/>
                     </div>
                     <div className='item-three'>
                         <p>Printed Cardigan (brown) - $20.00</p>
-                        <button type="submit">add to bag.</button>
+                        <button className='button'>add to bag.</button>
                         <Quantity className='quantity-counter' quantity={0}/>
                     </div>
                     <div className='item-four'>
                         <p>Winter Wonderland Sweater - $30.00</p>
-                        <button type="submit">add to bag.</button>
+                        <button className='button'>add to bag.</button>
                         <Quantity className='quantity-counter' quantity={0}/>
                     </div>
                     

@@ -1,6 +1,5 @@
 .clothing {
   
-    
     .clothing-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 2fr);
@@ -20,6 +19,25 @@
             color: purple;
             cursor: pointer;
             font-weight: bold;
+        }
+
+        button {
+            background-color: purple;
+            border: 1px solid black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        button:hover {
+            transform: scale(0.97);
+        }
+
+        button:active {
+            transform: scale(0.95);
         }
     
     }
