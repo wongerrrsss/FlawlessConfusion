@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Quantity extends Component {
     render() {
         const { className, quantity } = this.props;

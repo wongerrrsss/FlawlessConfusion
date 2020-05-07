@@ -1,0 +1,15 @@
+.shop-cart {
+    height: 675px;
+    width: 520px;
+    background-color: blueviolet;
+    box-shadow: -3px 20px 20px 0 rgba(0,0,0,0.2);
+}
+
+.shop-cart {
+    &__toggle {
+        background-color: black;
+        font-size: 18px;
+        border: 25px 0 0 25px;
+        
+    }
+}

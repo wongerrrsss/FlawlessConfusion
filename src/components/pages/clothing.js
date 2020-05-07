@@ -9,6 +9,7 @@ import Img4 from "../../../static/images/ashleysmall.jpg";
 
 import Quantity from "../quantity";
 
+
 class Clothing extends Component {
     
 
@@ -23,26 +24,25 @@ class Clothing extends Component {
                     <img src={Img3} />
                     <img src={Img4} />
                     <div className='item-one'>
-                        <p>Fall is here sweater - $30.00</p>
-                        <button className='button'>add to bag.</button>
-                        <Quantity className='quantity-counter' quantity={0}/>
+                        <p>Fall is here sweater</p>
+                        {/* <button className='button'>add to bag.</button> */}
+                        {/* <Quantity className='quantity-counter' quantity={0}/> */}
                     </div>
                     <div className='item-two'>
-                        <p>"FLY" tshirt - $15.00</p>
-                        <button className='button'>add to bag.</button>
-                        <Quantity className='quantity-counter' quantity={0}/>
+                        <p>"FLY" tshirt</p>
+                        {/* <button className='button'>add to bag.</button>
+                        <Quantity className='quantity-counter' quantity={0}/> */}
                     </div>
                     <div className='item-three'>
-                        <p>Printed Cardigan (brown) - $20.00</p>
-                        <button className='button'>add to bag.</button>
-                        <Quantity className='quantity-counter' quantity={0}/>
+                        <p>Printed Cardigan (brown)</p>
+                        {/* <button className='button'>add to bag.</button>
+                        <Quantity className='quantity-counter' quantity={0}/> */}
                     </div>
                     <div className='item-four'>
-                        <p>Winter Wonderland Sweater - $30.00</p>
-                        <button className='button'>add to bag.</button>
-                        <Quantity className='quantity-counter' quantity={0}/>
+                        <p>Winter Wonderland Sweater</p>
+                        {/* <button className='button'>add to bag.</button>
+                        <Quantity className='quantity-counter' quantity={0}/> */}
                     </div>
-                    
                 </div>
             </div>
         )
